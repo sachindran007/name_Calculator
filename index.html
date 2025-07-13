@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name Value Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Name Value Calculator</h1>
+      <p class="description">
+        Enter a name to calculate its value based on our unique alphabet system.
+        Find out if your name "Passes"!
+      </p>
+
+      <div class="input-section">
+        <label for="nameInput" align-items: center>Enter your name:</label>
+        <input
+          type="text"
+          id="nameInput"
+          placeholder="e.g., John Doe"
+          autocomplete="off"
+        />
+        <button id="calculateBtn">Calculate Value</button>
+      </div>
+
+      <div class="results-section">
+        <div id="breakdown" class="breakdown-grid">
+          <!-- Letter breakdown will be injected here by JavaScript -->
+        </div>
+        <p id="totalValue" class="total-value"></p>
+        <p id="resultMessage" class="result-message"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
